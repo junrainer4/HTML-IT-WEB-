@@ -1,0 +1,401 @@
+<!-- This webpage is my personal web profile for HTML lab activity -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Personal Web Profile</title>
+
+  <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fafafa;
+  line-height: 1.5;
+  margin: 20px;
+  background-image: url('3.avif');
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+
+
+header {
+  background: #0b6efd;
+  color: #fff;
+  padding: 18px 20px;
+  border-radius: 8px;
+  animation: slideUp 2s ease-out;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  animation: slideUp 2s ease-out;
+}
+
+header h2 {
+  margin: 4px 0 8px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #e6f0ff;
+  animation: slideUp 2s ease-out;}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 2px dashed #ddd;
+  animation: slideUp 2s ease-out;
+}
+
+.photo-links {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  animation: slideIn 2s ease-out;}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 4px solid #0b6efd;
+  padding: 4px;
+  background: #fff;
+  animation: slideIn 2s ease-out;
+}
+
+.photo-links h3 {
+  color: #0b6efd;
+  animation: slideUp 2s ease-out;
+}
+
+.photo-links a {
+  color: #0b6efd;
+  text-decoration: underline;
+  animation: slideUp 2s ease-out;
+}
+
+.quote-box {
+  background: #fff;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  animation: slideUp 2s ease-out;
+}
+
+.quote-box blockquote {
+  margin: 0;
+  padding-left: 14px;
+  border-left: 4px solid #0b6efd;
+  color: #333;
+  animation: slideUp 2s ease-out;
+}
+
+.quote-box cite {
+  display: block;
+  margin-top: 6px;
+  color: #666;
+  animation: slideUp 2s ease-out;
+}
+
+.lists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+   margin-left: 20px;
+   animation: slideUp 2s ease-out;
+}
+
+.lists-grid > div {
+  background: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  animation: slideUp 2s ease-out;
+}
+
+.lists-grid ul,
+.lists-grid ol,
+.lists-grid dl {
+  margin: 0; 
+  padding-left: 20px; 
+  background: none; 
+}
+
+
+.lists-grid h3 {
+  color: #0b6efd;
+  margin-top: 0;
+  animation: slideUp 2s ease-out;
+}
+
+.table-section {
+  background: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  animation: slideUp 2s ease-out;
+}
+
+.table-section h3 {
+  color: #0b6efd;
+  margin-top: 0;
+  animation: slideUp 2s ease-out;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  animation: slideUp 2s ease-out;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #e6eefc;
+  animation: slideUp 2s ease-out;
+}
+
+table th {
+  background: #f0f8ff;
+  animation: slideUp 2s ease-out;
+}
+
+.inline-examples {
+  background: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  animation: slideUp 2s ease-out;
+}
+
+.inline-examples h3 {
+  color: #0b6efd;
+  margin-top: 0;
+  animation: slideUp 2s ease-out;
+}
+
+.block-inline-section {
+  background: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  animation: slideUp 2s ease-out;
+}
+
+.block-inline-section h3 {
+  color: #0b6efd;
+  margin-top: 0;
+  animation: slideUp 2s ease-out;
+}
+
+.block-example {
+  background: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 8px;
+  animation: slideUp 2s ease-out;
+}
+
+.block-box {
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  margin-top: 6px;
+  animation: slideUp 2s ease-out;
+}
+
+.inline-example .inline-span {
+  color: red;
+  padding: 2px 4px;
+  border: 1px solid #ffdede;
+  margin-left: 6px;
+  animation: slideUp 2s ease-out;
+}
+
+footer {
+  text-align: center;
+  color: #666;
+  margin-top: 14px;
+  animation: slideUp 2s ease-out;
+}
+
+footer p {
+  margin: 6px 0 0;
+  animation: slideUp 2s ease-out;
+}
+
+.lists-grid ul,
+.lists-grid ol {
+  margin-left: 25px;
+  animation: slideUp 2s ease-out;
+}
+  </style>
+</head>
+
+<body>
+    
+  <header>
+    <h1>Jun Rainer D. Secorin</h1>
+    <h2>Student</h2>
+    <p>
+      Hello! I am <strong>Jun Rainer D. Secorin</strong>, a <em>BS Information Technology</em> student
+      passionate about <mark>web development</mark>. I want to learn designing in website,about UI/UX designing, and
+      front-end techniques. <small>(Currently learning HTML,CSS)</small>
+      <br>
+      <ins title="Updated">Profile last updated: Nov 21, 2025</ins>
+    </p>
+  </header>
+
+  <hr>
+
+  <section id="photo-links" class="photo-links">
+    <img src="rainer.jpg" alt="My Profile Picture" height="200" width="200"/>
+
+    <div>
+      <h3>Connect & Learn</h3>
+
+      
+      <p>
+        Useful resource: 
+        <a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">
+          W3Schools Website
+        </a>
+      </p>
+
+      <p>
+        Jump to skills: 
+        <a href="#skills">My Skills section</a>
+      </p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="quote" class="quote-box">
+    <blockquote>
+      "Design is not just what it looks like and feels like. Design is how it works."
+      <cite>— Steve Jobs</cite>
+    </blockquote>
+  </section>
+
+  <hr>
+
+  <section id="lists" class="lists-grid">
+    <div>
+      <h3>Hobbies (Unordered)</h3>
+
+      <ul>
+        <li>Drawing</li>
+        <li>Sketching UI concepts</li>
+        <li>Reading Manhwas</li>
+      </ul>
+    
+    </div>
+
+    <div>
+  <h3>Short-term Goals (Ordered)</h3>
+  <ol>
+    <li>Improve my HTML and CSS skills</li>
+    <li>Finish creating my personal website</li>
+    <li>Learn basic JavaScript for interactive pages</li>
+  </ol>
+</div>
+
+
+    <div>
+  <h3>Technical Terms (Description)</h3>
+  <dl>
+    <dt>HTML</dt>
+    <dd>The basic language used to create the structure of a website.</dd>
+
+    <dt>CSS</dt>
+    <dd>The language used to design and style a webpage.</dd>
+
+    <dt>Website</dt>
+    <dd>A collection of pages you can open on the internet using a browser.</dd>
+  </dl>
+</div>
+
+  </section>
+
+  <hr>
+
+  <section id="table" class="table-section">
+  <h3 id="skills">Profile Table</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Skills</td>
+        <td>Basic HTML, Basic CSS</td>
+      </tr>
+      <tr>
+        <td>Software</td>
+        <td>VS Code, Chrome, Figma (basic use)</td>
+      </tr>
+      <tr>
+        <td>Personal</td>
+        <td>Lives in D-4 Mahayahay Sacol, Buenavista, Agusan del Norte</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+  <hr>
+
+  <section id="inline-css" class="inline-examples">
+    <h3>Inline CSS Examples</h3>
+
+    <p style="color: #0b6efd;">
+      This paragraph uses <span style="color: #0b6efd; font-weight: 600;">inline text color</span>.
+    </p>
+
+    <p style="background: #fff7e6; padding: 10px; border: 2px solid #ffd27f;">
+      Example with <span style="background: #ffe9c4;">inline background color</span>, padding, and border.
+    </p>
+
+    <p>
+      <span style="font-size: 20px;">Inline font size changed</span>
+      <span style="border: 1px dashed #888; padding: 3px 6px;">Inline border applied</span>
+    </p>
+
+    <p style="padding: 8px; background: #eef7ff;">
+      This paragraph has inline padding and background color.
+    </p>
+
+    <p style="margin-left: 20px; color: #555;">
+      This text uses inline margin and text color.
+    </p>
+  </section>
+
+  <hr>
+
+  <section id="block-inline" class="block-inline-section">
+  <h3>Block vs Inline Elements</h3>
+
+  <div class="block-example">
+    <strong>Block element example:</strong>
+    <div class="block-box">
+      A block element (like &lt;div&gt;) takes up the full width of the page.
+    </div>
+  </div>
+
+  <p class="inline-example">
+    <strong>Inline element example:</strong>
+    <span class="inline-span">
+      An inline element (like &lt;span&gt;) only takes the space it needs.
+    </span>
+    The text continues on the same line.
+  </p>
+</section>
+
+</body>
+</html>
